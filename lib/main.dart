@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
-import 'package:get_api_project/screen/post_api_screen/post_register_screen.dart';
+
 import 'package:get_api_project/screen/show_model_data/show_model_data.dart';
-import 'package:get_api_project/screen/update_data_api_screen/update_data_screen.dart';
+
 
 void main(){
   runApp(const MyApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_api_project/controller/model_service/without_model.dart';
-import 'package:get_api_project/model/without_model/details_model.dart';
+
 
 class ModelDataShow extends StatefulWidget {
   const ModelDataShow({super.key});

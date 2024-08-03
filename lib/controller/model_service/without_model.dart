@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:get_api_project/model/without_model/details_model.dart';
 import 'package:http/http.dart' as http;
 class ModelApiService{
   static Future<dynamic> modelApiService()async{
