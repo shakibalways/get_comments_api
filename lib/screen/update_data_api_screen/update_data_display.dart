@@ -16,7 +16,7 @@ class ShowUpdateData extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.blue[100],
         appBar: AppBar(
-          title: Text("Update Data Show "),
+          title: const Text("Update Data Show "),
         ),
         body: Center(
           child: Container(
@@ -31,17 +31,17 @@ class ShowUpdateData extends StatelessWidget {
               children: [
                 Text(
                   "Name:$name",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
                 Text("job:$job",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 20,
                       color: Colors.black,
                       fontWeight: FontWeight.bold),),
-                Text(maxLines: 1, "updateAT:$updatedAT",style: TextStyle(
+                Text(maxLines: 1, "updateAT:$updatedAT",style: const TextStyle(
                   fontWeight: FontWeight.bold,fontSize: 20
                 ),),
               ],
