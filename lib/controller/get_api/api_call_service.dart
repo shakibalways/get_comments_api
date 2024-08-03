@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:get_api_project/model/commad_model.dart';
+import 'package:get_api_project/model/get_model/commad_model.dart';
 import 'package:http/http.dart' as http;
 
 class GetApiService {

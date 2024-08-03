@@ -1,8 +1,6 @@
-
-
 import 'package:flutter/material.dart';
-import 'package:get_api_project/controller/api_call_service.dart';
-import 'package:get_api_project/model/commad_model.dart';
+import 'package:get_api_project/controller/get_api/api_call_service.dart';
+import 'package:get_api_project/model/get_model/commad_model.dart';
 
 class GetApiPage extends StatefulWidget {
   const GetApiPage({super.key});
