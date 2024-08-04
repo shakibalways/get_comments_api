@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:get_api_project/screen/post_api_screen/post_register_screen.dart';
 
 import 'package:get_api_project/screen/show_model_data/show_model_data.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ModelDataShow(),
+      home: PostRegisterScreen(),
     );
   }
 }

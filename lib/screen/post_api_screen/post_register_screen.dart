@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get_api_project/controller/post_api/register_post_api.dart';
+import 'package:get_api_project/screen/post_api_screen/successfull_screen.dart';
 class PostRegisterScreen extends StatefulWidget {
   const PostRegisterScreen({super.key});
 
@@ -19,6 +20,7 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
           style: TextStyle(
               fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 25),
         ),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -53,7 +55,7 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
                 if (status) {
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("Login Success")));
-                  // Navigator.push(context, MaterialPageRoute(builder: (context)=> NationalScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> SuccessfullScreen()));
                 } else {
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("Login Failed")));
