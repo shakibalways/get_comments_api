@@ -15,7 +15,7 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           "Register Post Api ",
           style: TextStyle(
               fontWeight: FontWeight.bold, color: Colors.blue, fontSize: 25),
@@ -29,22 +29,22 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
           children: [
             TextFormField(
               controller: emailController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: "Email",
                   labelText: 'Email',
                   border: OutlineInputBorder()),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             TextFormField(
               controller: passwordController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   hintText: "Password",
                   labelText: 'Password',
                   border: OutlineInputBorder()),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             GestureDetector(
@@ -54,11 +54,11 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
                     password: passwordController.text);
                 if (status) {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("Login Success")));
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> SuccessfullScreen()));
+                      .showSnackBar(const SnackBar(content: Text("Login Success")));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> const SuccessfullScreen()));
                 } else {
                   ScaffoldMessenger.of(context)
-                      .showSnackBar(SnackBar(content: Text("Login Failed")));
+                      .showSnackBar(const SnackBar(content: Text("Login Failed")));
                 }
               },
               child: Container(
@@ -68,7 +68,7 @@ class _PostRegisterScreenState extends State<PostRegisterScreen> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.circular(10),
                 ),
-                child: Center(
+                child: const Center(
                     child: Text(
                   "Register",
                   style: TextStyle(
