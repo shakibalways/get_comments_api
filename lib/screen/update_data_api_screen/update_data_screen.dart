@@ -3,6 +3,7 @@ import 'package:get_api_project/controller/update_api/update_data_api.dart';
 import 'package:get_api_project/model/put/update.dart';
 import 'package:get_api_project/screen/update_data_api_screen/update_data_display.dart';
 
+
 class UpdateDataScreen extends StatefulWidget {
   const UpdateDataScreen({super.key});
 
