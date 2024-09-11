@@ -4,12 +4,13 @@ import 'package:get_api_project/model/put/update.dart';
 class ShowUpdateData extends StatelessWidget {
   final String? name, job, updatedAT;
   final DataUpdateModel updateModel;
-  const ShowUpdateData(
-      {super.key,
-      this.name,
-      this.job,
-      this.updatedAT,
-      required this.updateModel});
+  const ShowUpdateData({
+    super.key,
+    this.name,
+    this.job,
+    this.updatedAT,
+    required this.updateModel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -36,14 +37,19 @@ class ShowUpdateData extends StatelessWidget {
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
-                Text("job:$job",
+                Text(
+                  "job:$job",
                   style: const TextStyle(
                       fontSize: 20,
                       color: Colors.black,
-                      fontWeight: FontWeight.bold),),
-                Text(maxLines: 1, "updateAT:$updatedAT",style: const TextStyle(
-                  fontWeight: FontWeight.bold,fontSize: 20
-                ),),
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  maxLines: 1,
+                  "updateAT:$updatedAT",
+                  style: const TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 20),
+                ),
               ],
             ),
           ),
