@@ -18,9 +18,10 @@ class _SuccessfullScreenState extends State<SuccessfullScreen> {
             Text(
               "User Login Successfully",
               style: TextStyle(
-                  fontSize: 30,
-                  color: Colors.deepPurple,
-                  fontWeight: FontWeight.bold),
+                fontSize: 30,
+                color: Colors.deepPurple,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ],
         ),
