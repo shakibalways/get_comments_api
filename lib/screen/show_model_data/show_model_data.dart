@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:get_api_project/controller/model_service/without_model.dart';
 
@@ -20,7 +22,7 @@ class _ModelDataShowState extends State<ModelDataShow> {
         isLoading = false;
       });
     }).onError((error, stackTrace) {
-      print(error);
+      log("$error");
     });
   }
 
