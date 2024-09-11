@@ -10,7 +10,7 @@ class SuccessfullScreen extends StatefulWidget {
 class _SuccessfullScreenState extends State<SuccessfullScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
